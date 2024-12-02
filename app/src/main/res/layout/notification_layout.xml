@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/notif_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mashanip" />
+
+    <TextView
+        android:id="@+id/notif_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Counter"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:paddingTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Like" />
+
+        <TextView
+            android:id="@+id/like_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingEnd="20dp"
+            android:text="0"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_dislike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dislike" />
+
+        <TextView
+            android:id="@+id/dislike_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:text="0"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>
